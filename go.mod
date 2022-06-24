@@ -1,4 +1,4 @@
-module gmy
+module github.com/dcdunkan/gmy
 
 go 1.18
 

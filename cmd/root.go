@@ -3,10 +3,11 @@ package cmd
 import (
 	"errors"
 	"fmt"
-	"gmy/internal"
 	"io/ioutil"
 	"os"
 	"strings"
+
+	"github.com/dcdunkan/gmy/internal"
 
 	"github.com/erikgeiser/promptkit/confirmation"
 	"github.com/erikgeiser/promptkit/selection"

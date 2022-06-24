@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gmy/cmd"
+	"github.com/dcdunkan/gmy/cmd"
 )
 
 func main() {
