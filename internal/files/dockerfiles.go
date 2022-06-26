@@ -1,7 +1,7 @@
-package internal
+package files
 
 import (
-	"fmt"
+	"errors"
 	"os"
 	"path/filepath"
 )
@@ -37,20 +37,21 @@ dist
 dest`
 )
 
-func AddDockerFiles(platform, dir string) {
+func AddDockerFiles(platform, dir string) error {
 	switch platform {
 	case "Node":
 		err1 := os.WriteFile(filepath.Join(dir, "Dockerfile"), []byte(Node_Dockerfile), 0777)
 		err2 := os.WriteFile(filepath.Join(dir, ".dockerignore"), []byte(Node_DockerIgnore), 0777)
 		if err1 != nil || err2 != nil {
-			fmt.Println(" - Failed to add Docker files.")
+			return errors.New("Failed to write Node files")
 		}
 		break
 	case "Deno":
 		err := os.WriteFile(filepath.Join(dir, "Dockerfile"), []byte(Deno_Dockerfile), 0777)
 		if err != nil {
-			fmt.Println(" - Failed to add Docker files.")
+			return errors.New("Failed to write Node files")
 		}
 		break
 	}
+	return nil
 }

@@ -1,4 +1,4 @@
-package internal
+package files
 
 import (
 	"archive/tar"
@@ -8,17 +8,6 @@ import (
 	"path/filepath"
 	"strings"
 )
-
-func FileExists(path string) bool {
-	_, err := os.Stat(path)
-	if err == nil {
-		return true
-	}
-	if os.IsNotExist(err) {
-		return false
-	}
-	return false
-}
 
 func Untar(dst string, r io.Reader) error {
 	gzr, err := gzip.NewReader(r)

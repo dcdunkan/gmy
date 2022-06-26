@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/dcdunkan/gmy/cmd"
-)
+import "github.com/dcdunkan/gmy/cmd"
 
 func main() {
 	cmd.Execute()
