@@ -1,14 +1,16 @@
-# GMY
+# <h1 align="center">GMY</h1>
 
-> Work in progress!
+Fast and simple command line tool to setup the needed files to quickly create
+Telegram bots powered by the [grammY bot framework](https://grammy.dev). This
+tool allows you to create projects from several [templates](templates.json),
+maintained by both official team and third-party users.
 
-A tiny command line tool to setup the needed files to quickly create Telegram
-bots powered by the [grammY bot framework](https://grammy.dev). This tool allows
-you to create projects from several [templates](templates.json),
-maintained by third-party users.
-
-This is almost a complete Go re-write of the
+This is a complete Go re-write of the
 [official grammY CLI](https://github.com/grammyjs/create-grammy).
+
+![504541](https://user-images.githubusercontent.com/70066170/176051380-9930b0de-8bf7-40ab-95ec-ee64e937c282.gif)
+
+<p align="right">https://asciinema.org/a/504541</p>
 
 ## Install
 
@@ -54,18 +56,8 @@ Each template should contain the following fields:
 - `cache_file` — When the user chose to Cache dependencies, `deno cache` command
   will get executed for the specified file.
 
-## GMY?
+---
 
-Short form of grammY, for a command name.
+### GMY?
 
-## TODO
-
-- [ ] Documentation
-- [ ] New templates
-- [ ] Setup Releases
-
-## License
-
-Licensed under MIT © 2022 Dunkan.
-
-[See License →](LICENSE)
+I chose it as a short form of grammY, for the command name.
