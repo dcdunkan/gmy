@@ -28,7 +28,7 @@
       "path": "templates/deno/base-runner",
       "cache_file": "src/mod.ts",
       "docker_prompt": true,
-      "tsconfig_prompt": true
+      "tsconfig_prompt": false
     }
   ],
   "other": [
