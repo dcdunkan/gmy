@@ -1,4 +1,8 @@
-# <h1 align="center">GMY</h1>
+This became the base of the official CLI. So,
+
+# Use the [Official CLI](https://github.com/grammyjs/create-grammy) instead.
+
+# <h2 align="center">GMY</h2>
 
 Fast and simple command line tool to setup the needed files to quickly create
 Telegram bots powered by the [grammY bot framework](https://grammy.dev). This
